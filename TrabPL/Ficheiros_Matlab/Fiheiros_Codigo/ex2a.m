@@ -21,10 +21,10 @@ options = optimoptions('ga','PlotFcns',...
 [x, fval] = ga(fitness, 1, [], [], [], [], lb, ub, [], options);
 
 % Resultados
-PG1_opt = x;
-PG2_opt = P_D - x;
-custo_min = fval;
+PG1_tool = x;
+PG2_tool = P_D - x;
+custo_min_tool = fval;
 
-disp("PG1 ótimo = " + PG1_opt)
-disp("PG2 ótimo = " + PG2_opt)
-disp("Custo mínimo = " + custo_min)
+disp("PG1 ótimo = " + PG1_tool)
+disp("PG2 ótimo = " + PG2_tool)
+disp("Custo mínimo = " + custo_min_tool)
