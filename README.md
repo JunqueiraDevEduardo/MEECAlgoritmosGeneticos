@@ -1,2 +1,4 @@
-# APP-Matlab-Algoritmos-Gen-ticos
-APP MAtlab 
+
+# APP-Matlab-Algoritmos-Genéticos
+
+# Colónia de Formigas Trabalho de Pesquisa
