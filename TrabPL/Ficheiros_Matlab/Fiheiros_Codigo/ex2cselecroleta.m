@@ -69,11 +69,36 @@ fprintf('PG2 ótimo = %.4f p.u.\n', PG2_opt);
 fprintf('Custo mínimo = %.6f (AC/h)\n', custo_min);
 fprintf('======================================\n');
 
-% Gráfico da evolução do custo
-figure;
+%% ===== GRÁFICOS =====
+
+% 1️⃣ Evolução do custo mínimo (já tinhas)
+figure(1)
 plot(1:Nger, melhor_custo, 'LineWidth', 1.5);
-xlabel('Geração'); ylabel('Melhor Custo');
+xlabel('Geração');
+ylabel('Melhor Custo');
 title('Evolução do Custo Mínimo - GA com Seleção por Roleta');
+grid on;
+
+% 2️⃣ Curva do custo total C_total(PG1)
+PG1_vals = linspace(Pmin, Pmax, 200);
+C_vals = C_total(PG1_vals);
+
+figure(2)
+plot(PG1_vals, C_vals, 'b', 'LineWidth', 1.5);
+hold on;
+plot(PG1_opt, custo_min, 'ro', 'MarkerSize', 10, 'LineWidth', 2);
+xlabel('PG1 (p.u.)');
+ylabel('Custo total (AC/h)');
+title('Curva do Custo Total e Ponto Ótimo');
+legend('Custo total', 'Solução ótima', 'Location', 'best');
+grid on;
+
+% 3️⃣ (Opcional) Distribuição da população final
+figure(3)
+histogram(pop, 10);
+xlabel('PG1 (p.u.)');
+ylabel('Frequência');
+title('Distribuição da População Final');
 grid on;
 
 %% ======= FUNÇÕES AUXILIARES =======
