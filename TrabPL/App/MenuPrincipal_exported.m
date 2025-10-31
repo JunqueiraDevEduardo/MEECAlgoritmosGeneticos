@@ -123,7 +123,7 @@ classdef MenuPrincipal_exported < matlab.apps.AppBase
 
         % Code that executes before app deletion
         function delete(app)
-
+aaaaa
             % Delete UIFigure when app is deleted
             delete(app.UIFigure)
         end

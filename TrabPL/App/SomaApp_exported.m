@@ -1,10 +1,26 @@
-classdef app2_exported < matlab.apps.AppBase
+classdef SomaApp_exported < matlab.apps.AppBase
 
     % Properties that correspond to app components
     properties (Access = public)
         UIFigure         matlab.ui.Figure
         VoltarButButton  matlab.ui.control.Button
         ResultadoLabel   matlab.ui.control.Label
+    end
+
+    % Callbacks that handle component events
+    methods (Access = private)
+
+        % Code that executes after component creation
+        function startupFcn(app)
+            resultado = v1 + v2;
+            app.ResultadoLabel.Text = sprintf('Resultado: %.2f', resultado);
+        end
+
+        % Button pushed function: VoltarButButton
+        function VoltarButtonPushed(app, event)
+            close(app.UIFigure);
+            MenuPrincipal; % volta ao menu principal
+        end
     end
 
     % Component initialization
@@ -25,6 +41,7 @@ classdef app2_exported < matlab.apps.AppBase
 
             % Create VoltarButButton
             app.VoltarButButton = uibutton(app.UIFigure, 'push');
+            app.VoltarButButton.ButtonPushedFcn = createCallbackFcn(app, @VoltarButtonPushed, true);
             app.VoltarButButton.Position = [162 276 100 22];
             app.VoltarButButton.Text = 'VoltarBut';
 
@@ -37,13 +54,16 @@ classdef app2_exported < matlab.apps.AppBase
     methods (Access = public)
 
         % Construct app
-        function app = app2_exported
+        function app = SomaApp_exported
 
             % Create UIFigure and components
             createComponents(app)
 
             % Register the app with App Designer
             registerApp(app, app.UIFigure)
+
+            % Execute the startup function
+            runStartupFcn(app, @startupFcn)
 
             if nargout == 0
                 clear app

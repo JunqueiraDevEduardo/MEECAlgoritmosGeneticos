@@ -1,3 +1,4 @@
+
 %Funcao a optimizar
 function z=custo(x)
 %Funcao fitness
