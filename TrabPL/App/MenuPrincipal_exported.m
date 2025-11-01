@@ -2,14 +2,11 @@ classdef MenuPrincipal_exported < matlab.apps.AppBase
 
     % Properties that correspond to app components
     properties (Access = public)
-        UIFigure              matlab.ui.Figure
-        Valor1EditField       matlab.ui.control.NumericEditField
-        Valor1EditFieldLabel  matlab.ui.control.Label
-        MenuPrincipalLabel    matlab.ui.control.Label
-        SubtracaoButton       matlab.ui.control.Button
-        SomaButton            matlab.ui.control.Button
-        Valor2EditField       matlab.ui.control.NumericEditField
-        Valor2EditFieldLabel  matlab.ui.control.Label
+        UIFigure            matlab.ui.Figure
+        MENUPRINCIPALLabel  matlab.ui.control.Label
+        Label               matlab.ui.control.Label
+        SUBTRAOButton       matlab.ui.control.Button
+        SOMAButton          matlab.ui.control.Button
     end
 
     
@@ -23,31 +20,21 @@ classdef MenuPrincipal_exported < matlab.apps.AppBase
     % Callbacks that handle component events
     methods (Access = private)
 
-        % Callback function: not associated with a component
-        function SomabuttonPushed(app, event)
-            
+        % Code that executes after component creation
+        function startupFcn(app)
+            app.UIFigure.CloseRequestFcn = @(src,evt) delete(app);
         end
 
-        % Button pushed function: SubtracaoButton
-        function SubtracaoButtonPushed(app, event)
-            v1 = app.Valor1EditField.Value;
-            v2 = app.Valor2EditField.Value;
-            % Abre o menu da subtração (tens de ter criado SubtracaoApp.mlapp)
-            SubtracaoApp(v1, v2);
-            % Fecha o menu principal (opcional)
-            % close(app.UIFigure);
-   
+        % Button pushed function: SUBTRAOButton
+        function SUBTRAOButtonPushed(app, event)
+            SubtracaoApp; % abre a app de subtração
+            delete(app);  % fecha o menu
         end
 
-        % Button pushed function: SomaButton
-        function SomaButtonPushed(app, event)
-             % Ler os valores introduzidos
-             v1 = app.Valor1EditField.Value;
-             v2 = app.Valor2EditField.Value;
-             % Abre o menu da soma (tens de ter criado SomaApp.mlapp)
-             SomaApp(v1, v2);
-             % Fecha o menu principal (opcional)
-             close(app.UIFigure);
+        % Button pushed function: SOMAButton
+        function SOMAButtonPushed(app, event)
+           SomaApp;      % abre a app de soma
+           delete(app);  % fecha o menu
         end
     end
 
@@ -59,45 +46,31 @@ classdef MenuPrincipal_exported < matlab.apps.AppBase
 
             % Create UIFigure and hide until all components are created
             app.UIFigure = uifigure('Visible', 'off');
-            app.UIFigure.Position = [100 100 640 480];
+            app.UIFigure.Position = [100 100 388 427];
             app.UIFigure.Name = 'MATLAB App';
 
-            % Create Valor2EditFieldLabel
-            app.Valor2EditFieldLabel = uilabel(app.UIFigure);
-            app.Valor2EditFieldLabel.HorizontalAlignment = 'right';
-            app.Valor2EditFieldLabel.Position = [49 267 85 22];
-            app.Valor2EditFieldLabel.Text = 'Valor2EditField';
+            % Create SOMAButton
+            app.SOMAButton = uibutton(app.UIFigure, 'push');
+            app.SOMAButton.ButtonPushedFcn = createCallbackFcn(app, @SOMAButtonPushed, true);
+            app.SOMAButton.Position = [146 249 100 23];
+            app.SOMAButton.Text = 'SOMA';
 
-            % Create Valor2EditField
-            app.Valor2EditField = uieditfield(app.UIFigure, 'numeric');
-            app.Valor2EditField.Position = [155 267 84 22];
+            % Create SUBTRAOButton
+            app.SUBTRAOButton = uibutton(app.UIFigure, 'push');
+            app.SUBTRAOButton.ButtonPushedFcn = createCallbackFcn(app, @SUBTRAOButtonPushed, true);
+            app.SUBTRAOButton.Position = [146 194 104 23];
+            app.SUBTRAOButton.Text = 'SUBTRAÇÃO';
 
-            % Create SomaButton
-            app.SomaButton = uibutton(app.UIFigure, 'push');
-            app.SomaButton.ButtonPushedFcn = createCallbackFcn(app, @SomaButtonPushed, true);
-            app.SomaButton.Position = [272 277 100 22];
-            app.SomaButton.Text = 'SomaButton';
+            % Create Label
+            app.Label = uilabel(app.UIFigure);
+            app.Label.Position = [153 358 25 22];
+            app.Label.Text = '';
 
-            % Create SubtracaoButton
-            app.SubtracaoButton = uibutton(app.UIFigure, 'push');
-            app.SubtracaoButton.ButtonPushedFcn = createCallbackFcn(app, @SubtracaoButtonPushed, true);
-            app.SubtracaoButton.Position = [415 277 104 22];
-            app.SubtracaoButton.Text = 'SubtracaoButton';
-
-            % Create MenuPrincipalLabel
-            app.MenuPrincipalLabel = uilabel(app.UIFigure);
-            app.MenuPrincipalLabel.Position = [155 410 84 22];
-            app.MenuPrincipalLabel.Text = 'Menu Principal';
-
-            % Create Valor1EditFieldLabel
-            app.Valor1EditFieldLabel = uilabel(app.UIFigure);
-            app.Valor1EditFieldLabel.HorizontalAlignment = 'right';
-            app.Valor1EditFieldLabel.Position = [50 307 85 22];
-            app.Valor1EditFieldLabel.Text = 'Valor1EditField';
-
-            % Create Valor1EditField
-            app.Valor1EditField = uieditfield(app.UIFigure, 'numeric');
-            app.Valor1EditField.Position = [156 307 84 22];
+            % Create MENUPRINCIPALLabel
+            app.MENUPRINCIPALLabel = uilabel(app.UIFigure);
+            app.MENUPRINCIPALLabel.FontSize = 24;
+            app.MENUPRINCIPALLabel.Position = [94 341 208 39];
+            app.MENUPRINCIPALLabel.Text = 'MENU PRINCIPAL';
 
             % Show the figure after all components are created
             app.UIFigure.Visible = 'on';
@@ -116,6 +89,9 @@ classdef MenuPrincipal_exported < matlab.apps.AppBase
             % Register the app with App Designer
             registerApp(app, app.UIFigure)
 
+            % Execute the startup function
+            runStartupFcn(app, @startupFcn)
+
             if nargout == 0
                 clear app
             end
@@ -123,7 +99,7 @@ classdef MenuPrincipal_exported < matlab.apps.AppBase
 
         % Code that executes before app deletion
         function delete(app)
-aaaaa
+
             % Delete UIFigure when app is deleted
             delete(app.UIFigure)
         end
