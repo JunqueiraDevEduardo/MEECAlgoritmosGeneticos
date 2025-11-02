@@ -1,4 +1,4 @@
 %Funcao a optimizar
-function z=seno(x)
+function z=senoMax(x)
 %Funcao fitness
 z=-sin(x);
