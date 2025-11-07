@@ -1,3 +1,9 @@
+%% ============================================================
+%  ALGORITMO GENÉTICO - Seleção por torneio
+%  Ex2:
+%  Autor: Eduardo, Rodrigo e João
+% ============================================================
+
 % Funções custo conforme enunciado
 C1 = @(PG1) 0.3*PG1 + 0.01*PG1.^2;         % custo do gerador 1
 C2 = @(PG2) 0.2*PG2 + 0.3*PG2.^2;          % custo do gerador 2

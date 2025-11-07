@@ -1,12 +1,10 @@
 %% ============================================================
 %  ALGORITMO GENÉTICO - Seleção por Roleta
-%  Problema: Despacho Económico sem perdas
-%  Autor: [O teu nome]
+%  Ex2
+%  Autor: Eduardo, Rodrigo e João
 % ============================================================
 
-clear; clc; close all;
-
-%% Dados do problema
+% Dados do problema
 PD = 0.9;           % Potência total exigida (p.u.)
 Pmin = 0;           % Limite inferior do Gerador 1
 Pmax = 0.5;         % Limite superior do Gerador 1 (caso da alínea b)
@@ -18,17 +16,17 @@ C2 = @(PG2) 0.2*PG2 + 0.3*PG2.^2;
 % Função objetivo total
 C_total = @(PG1) C1(PG1) + C2(PD - PG1);
 
-%% Parâmetros do GA
+% Parâmetros do GA
 Npop = 50;        % Tamanho da população
 Nger = 100;       % Número de gerações
 Pc = 0.8;         % Probabilidade de crossover
 Pm = 0.1;         % Probabilidade de mutação
 elitismo = true;  % Mantém o melhor indivíduo
 
-%% Inicialização da população
+% Inicialização da população
 pop = Pmin + (Pmax - Pmin) * rand(Npop,1);
 
-%% Loop principal do GA
+% Loop principal do GA
 for g = 1:Nger
     % Avaliar custo e fitness (quanto menor o custo, maior o fitness)
     custos = C_total(pop);
@@ -57,7 +55,7 @@ for g = 1:Nger
     pop = filhos;
 end
 
-%% Resultados finais
+% Resultados finais
 [melhor_custo_final, idx_final] = min(C_total(pop));
 PG1_opt = pop(idx_final);
 PG2_opt = PD - PG1_opt;
@@ -75,8 +73,8 @@ fprintf('\nComparação com GA Toolbox:\n');
 fprintf('GA Roleta:    PG1 = %.4f | PG2 = %.4f | Custo = %.5f\n', PG1_opt, PG2_opt, custo_min);
 fprintf('GA Toolbox:  PG1 = %.4f | PG2 = %.4f | Custo = %.5f\n', PG1_tool, PG2_tool, custo_min_tool);
 
-%% ==========================
-% 1️⃣ Evolução do custo mínimo (GA Roleta)
+% ==========================
+%  Evolução do custo mínimo (GA Roleta)
 % ==========================
 figure(1);
 plot(1:Nger, melhor_custo, 'r-', 'LineWidth', 1.5); hold on;
@@ -87,8 +85,8 @@ title('Evolução do Custo Mínimo - GA Roleta');
 legend('GA Roleta', 'GA Toolbox (valor final)', 'Location', 'best');
 grid on;
 
-%% ==========================
-% 2️⃣ Curva do custo total e ponto ótimo (GA Roleta)
+% ==========================
+%  Curva do custo total e ponto ótimo (GA Roleta)
 % ==========================
 C1 = @(PG1) 0.3*PG1 + 0.01*PG1.^2;
 C2 = @(PG2) 0.2*PG2 + 0.3*PG2.^2;
@@ -108,8 +106,8 @@ title('Curva do Custo Total - GA Roleta vs Toolbox');
 legend('Custo total', 'GA Roleta', 'GA Toolbox', 'Location', 'best');
 grid on;
 
-%% ==========================
-% 3️⃣ Distribuição da população final (GA Roleta)
+% ==========================
+%  Distribuição da população final (GA Roleta)
 % ==========================
 figure(3);
 histogram(pop, 10, 'FaceColor', 'r'); hold on;
@@ -121,7 +119,7 @@ title('Distribuição da População Final - GA Roleta');
 legend('População Roleta', 'Ótimo Roleta', 'Ótimo Toolbox', 'Location', 'best');
 grid on;
 
-%% ======= FUNÇÕES AUXILIARES =======
+% ======= FUNÇÕES AUXILIARES =======
 
 function pais = selecao_roleta(pop, fitness)
     % Seleção proporcional ao fitness

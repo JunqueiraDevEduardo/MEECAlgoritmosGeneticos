@@ -1,4 +1,9 @@
-%% Funções custo
+%% ============================================================
+%  ALGORITMO GENÉTICO - Seleção por Roleta
+%  Ex2b:
+%  Autor: Eduardo, Rodrigo e João
+% ============================================================
+% Funções custo
 C1 = @(PG1) 0.3*PG1 + 0.01*PG1.^2;
 C2 = @(PG2) 0.2*PG2 + 0.3*PG2.^2;
 

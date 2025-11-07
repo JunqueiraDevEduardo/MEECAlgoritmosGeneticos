@@ -1,3 +1,9 @@
+%% ============================================================
+%  ALGORITMO GENÉTICO 
+%  Ex1:
+%  Autor: Eduardo, Rodrigo e João
+% ============================================================
+%Ex1:
 %Programa de optimizacao
 %X = GA(FITNESSFCN,NVARS,A,b,Aeq,beq,lb,ub,NONLCON,options)
 options = optimoptions('ga','PlotFcns',...
