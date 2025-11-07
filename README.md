@@ -1,7 +1,9 @@
 
 # APP-Matlab-Algoritmos-Genéticos
 Resolução de uma aplicação em Matlab recorrendo ao uso da ToolBox de Optimização que corresponda aos seguintes exercícios:
+
 1️⃣ Exercício nº1 --> João Azevedo já fez
+
 1 Determinação do mínimo e do máximo da função seno
 Recorrendo à Toolbox de Otimização do MATLAB determine o mínimo e o máximo da função seno
 no intervalo [0, 2π]. Para tal, deverá criar dois ficheiros-M, um chamado "seno.m"correspondente
@@ -22,6 +24,7 @@ Nota: Recorra à função optimoptions para elaborar os gráficos das alíneas a
 ####################################################################################################################################################################################
 
 2️⃣ Exercício nº2 Despacho de uma rede elétrica ->Eduardo Junqueira está a fazer
+
 2.1 Exercícios
 
 a) Determine, recorrendo à Toolbox de Otimização do MATLAB, o despacho económico sem perdas
