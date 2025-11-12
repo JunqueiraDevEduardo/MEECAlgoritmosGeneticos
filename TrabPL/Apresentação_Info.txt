@@ -1,6 +1,0 @@
-A apresentação será SEM POWERPOINT. APENAS MOSTRAR AO PROF A APLICAÇÃO NO MATLAB.
-APREENTAÇÃO SERÁ DE 10m!
-APRESENTAÇÃO SERÁ NA MESMA SEMANA DA APRESENTAÇÃO DO TRABALHO DE PESQUISA SEMANA 6 DE DEZEMBRO!
-APRESENTAÇÃO VALE  apresentação do programa desenvolvido em MATLAB (GUI) que permita a resolução dos
-exercícios propostos será realizada no horário das aulas Teóricas, Orientação Tutorial e Práticas
-Laboratoriais de 8 a 19 de dezembro de 2025. A apresentação terá a duração de 10 minutos.
