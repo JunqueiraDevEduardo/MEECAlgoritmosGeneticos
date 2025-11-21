@@ -119,13 +119,13 @@ classdef Exercicio1App_exported < matlab.apps.AppBase
             app.ValorDropDown.Layout.Column = 2;
             app.ValorDropDown.Value = 'Mínimo';
 
-            % Create EX1Exerccio1dafichaqueencontraromnimomximodafunosenousandoalgoritmosgenticosGAProgramadeoptimizacaoXGAFITNESSFCNNVARSAbAeqbeqlbubNONLCONoptionsLabel
-            app.EX1Exerccio1dafichaqueencontraromnimomximodafunosenousandoalgoritmosgenticosGAProgramadeoptimizacaoXGAFITNESSFCNNVARSAbAeqbeqlbubNONLCONoptionsLabel = uilabel(app.GridLayout);
-            app.EX1Exerccio1dafichaqueencontraromnimomximodafunosenousandoalgoritmosgenticosGAProgramadeoptimizacaoXGAFITNESSFCNNVARSAbAeqbeqlbubNONLCONoptionsLabel.HorizontalAlignment = 'center';
-            app.EX1Exerccio1dafichaqueencontraromnimomximodafunosenousandoalgoritmosgenticosGAProgramadeoptimizacaoXGAFITNESSFCNNVARSAbAeqbeqlbubNONLCONoptionsLabel.WordWrap = 'on';
-            app.EX1Exerccio1dafichaqueencontraromnimomximodafunosenousandoalgoritmosgenticosGAProgramadeoptimizacaoXGAFITNESSFCNNVARSAbAeqbeqlbubNONLCONoptionsLabel.Layout.Row = 2;
-            app.EX1Exerccio1dafichaqueencontraromnimomximodafunosenousandoalgoritmosgenticosGAProgramadeoptimizacaoXGAFITNESSFCNNVARSAbAeqbeqlbubNONLCONoptionsLabel.Layout.Column = [2 5];
-            app.EX1Exerccio1dafichaqueencontraromnimomximodafunosenousandoalgoritmosgenticosGAProgramadeoptimizacaoXGAFITNESSFCNNVARSAbAeqbeqlbubNONLCONoptionsLabel.Text = {'EX1:'; 'Exercício 1 da ficha, que é encontrar o mínimo/máximo da função seno usando algoritmos genéticos (GA)'; ''; '%Programa de optimizacao'; '%X = GA(FITNESSFCN,NVARS,A,b,Aeq,beq,lb,ub,NONLCON,options)'};
+            % Create EX1Exerccio1optionsLabel
+            app.EX1optionsLabel = uilabel(app.GridLayout);
+            app.EX1optionsLabel.HorizontalAlignment = 'center';
+            app.EX1optionsLabel.WordWrap = 'on';
+            app.EX1optionsLabel.Layout.Row = 2;
+            app.EX1optionsLabel.Layout.Column = [2 5];
+            app.EX1optionsLabel.Text = {'EX1:'; 'Exercício 1 da ficha, que é encontrar o mínimo/máximo da função seno usando algoritmos genéticos (GA)'; ''; '%Programa de optimizacao'; '%X = GA(FITNESSFCN,NVARS,A,b,Aeq,beq,lb,ub,NONLCON,options)'};
 
             % Create GrficosrepresentadosToolboxValorLabel
             app.GrficosrepresentadosToolboxValorLabel = uilabel(app.GridLayout);
