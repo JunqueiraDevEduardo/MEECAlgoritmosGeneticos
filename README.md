@@ -1,9 +1,11 @@
 # Artigos realizados em Overleaf nos seguintes links:
-Trabalho de pesquisa: Colónia de Formigas https://www.overleaf.com/read/bddfyncpmbpk#801cda;
+Relatório Trabalho de pesquisa: Colónia de Formigas https://www.overleaf.com/read/bddfyncpmbpk#801cda;
 
 
+Apresentação Trabalho de pesquisa: Colónia de Formigas https://www.overleaf.com/read/vyxrbdmxbqsy#53a22c;
 
-Trabalho de desenvolvimento: APP GA https://www.overleaf.com/read/mvcmckmkrznm#521546;
+
+Relatório Trabalho de desenvolvimento: APP GA https://www.overleaf.com/read/mvcmckmkrznm#521546;
 
 
 
