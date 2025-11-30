@@ -1,50 +1,16 @@
+# Artigos realizados em Overleaf nos seguintes links:
+Relatório Trabalho de pesquisa: Colónia de Formigas https://www.overleaf.com/read/bddfyncpmbpk#801cda;
 
-# APP-Matlab-Algoritmos-Genéticos
-Resolução de uma aplicação em Matlab recorrendo ao uso da ToolBox de Optimização que corresponda aos seguintes exercícios:
 
-1️⃣ Exercício nº1 --> João Azevedo já fez
+Apresentação Trabalho de pesquisa: Colónia de Formigas https://www.overleaf.com/read/vyxrbdmxbqsy#53a22c;
 
-1 Determinação do mínimo e do máximo da função seno
-Recorrendo à Toolbox de Otimização do MATLAB determine o mínimo e o máximo da função seno
-no intervalo [0, 2π]. Para tal, deverá criar dois ficheiros-M, um chamado "seno.m"correspondente
-à função fitness e outro chamado "gaseno.m"correspondente ao programa principal. O programa a
-elaborar deverá apresentar os seguintes gráficos:
 
-a) A evolução da média e do melhor valor da função fitness para cada geração;
+Relatório Trabalho de desenvolvimento: APP GA https://www.overleaf.com/read/mvcmckmkrznm#521546;
 
-b) Os melhores indivíduos para cada variável e para cada geração;
 
-c) Avaliação do critério de paragem em função do número de gerações;
 
-d) A função seno no intervalo [0, 2π] com a indicação do ponto correspondente ao seu mínimo;
 
-e) A função seno no intervalo [0, 2π] com indicação do ponto correspondente ao seu máximo.
-
-Nota: Recorra à função optimoptions para elaborar os gráficos das alíneas a), b) e c).
-####################################################################################################################################################################################
-
-2️⃣ Exercício nº2 Despacho de uma rede elétrica ->Eduardo Junqueira está a fazer
-
-2.1 Exercícios
-
-a) Determine, recorrendo à Toolbox de Otimização do MATLAB, o despacho económico sem perdas
-da rede da Figura 4 e compare os resultados com os obtidos recorrendo aos multiplicadores de
-Lagrange. ->Eduardo Junqueira está a fazer
-
-b) Determine o despacho, tal como determinou no exercício anterior, admitindo que a potência
-máxima do Gerador 1 da Figura 4 é igual a 0,5 p.u..
-
-c) Desenvolva um algoritmo genético em MATLAB que permita resolver os exercícios anteriores.
-Compare os resultados obtidos com os da Toolbox de Otimização do MATLAB.
-
-d) Crie uma APP em MATLAB que permite implementar graficamente as alíneas a), b) e c).
-
-####################################################################################################################################################################################
-####################################################################################################################################################################################
-####################################################################################################################################################################################
-####################################################################################################################################################################################
-####################################################################################################################################################################################
-####################################################################################################################################################################################
+Entrega criar pasta com nº de um só colega do grupo meter á tudo e zipar a informação!
 
 # Colónia de Formigas Trabalho de Pesquisa
 1️⃣ Introdução --> Fazemos todos
@@ -125,9 +91,9 @@ Otimização de redes, etc.
 
 Se quiseres, comenta vantagens e desvantagens:
 
-👍 Adaptativo, distribuído, robusto;
+ Adaptativo, distribuído, robusto;
 
-👎 Pode convergir lentamente, depende dos parâmetros.
+ Pode convergir lentamente, depende dos parâmetros.
 ####################################################################################################################################################################################
 
 6️⃣ Extensões e combinações--> Fazemos todos
@@ -154,4 +120,50 @@ Destaca sua importância e aplicações.
 ####################################################################################################################################################################################
 ####################################################################################################################################################################################
 
-Entrega criar pasta com nº de um só colega do grupo meter á tudo e zipar a informação!
+
+# APP-Matlab-Algoritmos-Genéticos
+Resolução de uma aplicação em Matlab recorrendo ao uso da ToolBox de Optimização que corresponda aos seguintes exercícios:
+
+1️⃣ Exercício nº1 --> João Azevedo já fez
+
+1 Determinação do mínimo e do máximo da função seno
+Recorrendo à Toolbox de Otimização do MATLAB determine o mínimo e o máximo da função seno
+no intervalo [0, 2π]. Para tal, deverá criar dois ficheiros-M, um chamado "seno.m"correspondente
+à função fitness e outro chamado "gaseno.m"correspondente ao programa principal. O programa a
+elaborar deverá apresentar os seguintes gráficos:
+
+a) A evolução da média e do melhor valor da função fitness para cada geração;
+
+b) Os melhores indivíduos para cada variável e para cada geração;
+
+c) Avaliação do critério de paragem em função do número de gerações;
+
+d) A função seno no intervalo [0, 2π] com a indicação do ponto correspondente ao seu mínimo;
+
+e) A função seno no intervalo [0, 2π] com indicação do ponto correspondente ao seu máximo.
+
+Nota: Recorra à função optimoptions para elaborar os gráficos das alíneas a), b) e c).
+####################################################################################################################################################################################
+
+2️⃣ Exercício nº2 Despacho de uma rede elétrica ->Eduardo Junqueira está a fazer
+
+2.1 Exercícios
+
+a) Determine, recorrendo à Toolbox de Otimização do MATLAB, o despacho económico sem perdas
+da rede da Figura 4 e compare os resultados com os obtidos recorrendo aos multiplicadores de
+Lagrange. ->Eduardo Junqueira está a fazer
+
+b) Determine o despacho, tal como determinou no exercício anterior, admitindo que a potência
+máxima do Gerador 1 da Figura 4 é igual a 0,5 p.u..
+
+c) Desenvolva um algoritmo genético em MATLAB que permita resolver os exercícios anteriores.
+Compare os resultados obtidos com os da Toolbox de Otimização do MATLAB.
+
+d) Crie uma APP em MATLAB que permite implementar graficamente as alíneas a), b) e c).
+
+####################################################################################################################################################################################
+####################################################################################################################################################################################
+####################################################################################################################################################################################
+####################################################################################################################################################################################
+####################################################################################################################################################################################
+####################################################################################################################################################################################
