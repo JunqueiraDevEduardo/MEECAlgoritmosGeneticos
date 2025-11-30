@@ -1,6 +1,11 @@
 # Artigos realizados em Overleaf nos seguintes links:
-Trabalho de pesquisa: Colónia de Formigas https://www.overleaf.com/read/bddfyncpmbpk#801cda
-Trabalho de desenvolvimento: APP GA https://www.overleaf.com/read/mvcmckmkrznm#521546
+Trabalho de pesquisa: Colónia de Formigas https://www.overleaf.com/read/bddfyncpmbpk#801cda;
+
+
+
+Trabalho de desenvolvimento: APP GA https://www.overleaf.com/read/mvcmckmkrznm#521546;
+
+
 
 
 Entrega criar pasta com nº de um só colega do grupo meter á tudo e zipar a informação!
