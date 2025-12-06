@@ -7,6 +7,8 @@ Apresentação Trabalho de pesquisa: Colónia de Formigas https://www.overleaf.c
 
 Relatório Trabalho de desenvolvimento: APP GA https://www.overleaf.com/read/mvcmckmkrznm#521546;
 
+Apresentação Trabalho de Desenvolvimento Rascunho Word link: https://myisepipp-my.sharepoint.com/:w:/r/personal/1251561_isep_ipp_pt/Documents/Apresenta%C3%A7%C3%A3o%20Trabalho%20de%20Desenvolvimento%20Rascunho.docx?d=wf775f3471e2a40729cb475b77c934899&csf=1&web=1&e=Yfa0iR
+
 
 
 
