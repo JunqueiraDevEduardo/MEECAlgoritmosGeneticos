@@ -1,0 +1,15 @@
+Abrir a app, mostrar o menu falar que tanto dá para resolver o exercício 1 como o 2.
+Como o propósito da apresentação é falar do exercício 2, iremos apenas mostrar a interface do exercício 1 e mostrar que o mesmo é executado perfeitamento, mas muito simples.
+Passar para o exercício 2, aqui podemos ver que temos muitas interações na interface.
+Podemos modificar parâmetros do problema, como a potencia máxima do gerador 1, algo que é pedido para mudar durante a resolução do problema, Temos dois botões um para resolver o exercício a partir do método da toolbox, e outro para resolver o exercício a partir do algoritmo genético desenvolvidos por nós próprios.
+Este algoritmo é oq nos permite ter uma maior dinamização da app, podendo então a nós escolhermos o método de seleção de pais que pretendemos, a seleção por roleta ou a seleção por torneio, e podemos variar parâmetros presentes no algoritmo, como ….
+Permitindo assim estudar melhor cada método de seleção e comparar tanto com a toolbox, como entre métodos.
+Por falar em comparação temos ainda um botão que permite comparar os últimos valor gerados pela toolbox e pelo algoritmo, mostrando uma mensagem com os resultados numéricos.
+
+Comecemos então por correr a toolbox, e aqui apresentam nos 4 gráficos (falar um pouco dos gráficos (está a expicar oq é no relatório)) e para além dos gráficos gerados pela própria toolbox, temos uma curva do custo total com a solução ótima identificada, para ser possível visualizarmos que o valor apresenta-se no mínimo da curva. E depois temos uma mensagem em que nos mostra os valores numericos
+Corremos o ga, com os parâmetros já definidos, e aqui são apresentados 3 gráficos (falar dos 3 gráficos) que nos permitem estudar o algoritmo de acordo com o tempo de convergência e da distribuição da população. 
+Mudamos para a seleção torneio e corremos, mostramos que os gráficos são iguais. E podemos já falar da diferença entre cada um dos métodos (explicado no relatório). 
+
+Depois clicamos no botão de comparar e mostramos que os valores são muito idênticos. mudamos para o método de roleta e clicamos logo de seguida no botão de comparar mostrando que dá erro, e assim corremos o ga e mostramos que os valores tanto para a roleta como para o torneio são idênticos se nao iguais a toolbox.
+Mudamos a potencia máxima para 0.5 e corremos os todos os métodos.
+E por fim falamos das mensagens de erros que nos aparece, como na cena da probabilidade, ou da potencia máxima.
